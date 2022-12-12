@@ -22,38 +22,37 @@ import tn.esprit.spring.services.VoyageServiceImpl;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
-class VoyageServiceMockTests {
+public class VoyageServiceMockTests {
 	 @Mock
 	 VoyageRepository voyageRepository;
 	 @InjectMocks
 	 VoyageServiceImpl voyageService;
 	 
-	 Voyage voyage = new Voyage(1L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30);
-	 ArrayList<Voyage> listvoyages = new ArrayList<Voyage>() {
+	// Voyage voyage = new Voyage(1L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30);
+	// ArrayList<Voyage> listvoyages = new ArrayList<Voyage>() {
 		
-
 		/**
 		 * 
 		 */
-		private static final long serialVersionUID = 1L;
+	//	private static final long serialVersionUID = 1L;
 
-		{
-		 add(new Voyage(2L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30));
-		 add(new Voyage(3L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30));
-		 }
-	 };
+	//	{
+	//	 add(new Voyage(2L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30));
+	//	 add(new Voyage(3L,25,"tunis","Rades",new Date(),new Date(),12.30,15.30));
+	//	 }
+	// };
 	 
-	 @Test
-     void retrieveProduitTest(){
-        Mockito.when(voyageRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(voyage));
-        Voyage voyage1=voyageService.recupererVoyageParId(3L);
-        Assertions.assertNotNull(voyage1);
-    }
-	 @Test
-     void retrieveAllProduit(){
-        Mockito.when(voyageRepository.findAll()).thenReturn(listvoyages);
-        Assertions.assertEquals(listvoyages,voyageService.recupererAll());
-    }
+	// @Test
+   // public void retrieveProduitTest(){
+   //     Mockito.when(voyageRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(voyage));
+    //    Voyage voyage1=voyageService.recupererVoyageParId(3L);
+    //    Assertions.assertNotNull(voyage1);
+   // }
+	// @Test
+   //  public void retrieveAllProduit(){
+   //     Mockito.when(voyageRepository.findAll()).thenReturn(listvoyages);
+   //     Assertions.assertEquals(listvoyages,voyageService.recupererAll());
+   // }
 	
 	
 

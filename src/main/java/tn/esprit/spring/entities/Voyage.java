@@ -183,6 +183,11 @@ public class Voyage  implements Serializable {
 			double heureDepart2, double heureArrivee2) {
 		// TODO Auto-generated constructor stub
 	}
+
+
+	public Voyage(long l, String string, String string2, int i, Date dc, Date dm) {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 
