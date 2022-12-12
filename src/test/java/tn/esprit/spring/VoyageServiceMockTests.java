@@ -19,9 +19,9 @@ import tn.esprit.spring.entities.Voyage;
 import tn.esprit.spring.repository.VoyageRepository;
 import tn.esprit.spring.services.VoyageServiceImpl;
 
-@SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
-@ExtendWith(MockitoExtension.class)
+//@SpringBootTest
+//@TestMethodOrder(OrderAnnotation.class)
+//@ExtendWith(MockitoExtension.class)
 public class VoyageServiceMockTests {
 	 @Mock
 	 VoyageRepository voyageRepository;
