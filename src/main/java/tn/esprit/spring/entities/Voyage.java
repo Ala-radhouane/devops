@@ -56,6 +56,22 @@ public class Voyage  implements Serializable {
 	
 	@ManyToMany
     public List<Voyageur> mesVoyageurs;
+	
+	
+
+
+	public Voyage(Long idVoyage, long codeVoyage, Ville gareDepart, Ville gareArrivee, Date dateDepart,
+			Date dateArrivee, double heureDepart, double heureArrivee) {
+		super();
+		this.idVoyage = idVoyage;
+		this.codeVoyage = codeVoyage;
+		this.gareDepart = gareDepart;
+		this.gareArrivee = gareArrivee;
+		this.dateDepart = dateDepart;
+		this.dateArrivee = dateArrivee;
+		this.heureDepart = heureDepart;
+		this.heureArrivee = heureArrivee;
+	}
 
 
 	public long getCodeVoyage() {
@@ -160,6 +176,12 @@ public class Voyage  implements Serializable {
 
 	public Voyage() {
 		super();
+	}
+
+
+	public Voyage(long idVoyage2, long codeVoyage2, String string, String string2, Date dateDepart2, Date dateArrivee2,
+			double heureDepart2, double heureArrivee2) {
+		// TODO Auto-generated constructor stub
 	}
 	
 	
